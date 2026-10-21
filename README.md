@@ -1,4 +1,4 @@
-# DX9_2.5D_GameProject
+# DX9_2.5D_GameProject_Team
 
 **DirectX 9 기반 2.5D 액션 — 「MULLET MADJACK」 모작 (3인 팀 프로젝트)**
 
@@ -133,7 +133,7 @@ for (auto& pObj : objectList)
 file << jMap.dump(2);                          // 들여쓰기 2칸
 ```
 
-<sub>코드 · [`CFileIO::Save_MapData`](https://github.com/ddoichaboom/DX9_2.5D_GameProject/blob/9a49e1837a079ea5d0458322138afe79708e023a/Editor/Code/CFileIO.cpp#L126-L419)</sub>
+<sub>코드 · [`CFileIO::Save_MapData`](https://github.com/ddoichaboom/DX9_2.5D_GameProject_Team/blob/9a49e1837a079ea5d0458322138afe79708e023a/Editor/Code/CFileIO.cpp#L126-L419)</sub>
 
 </details>
 
@@ -165,7 +165,7 @@ for (auto& jObj : jObjects)
 }
 ```
 
-<sub>코드 · [`CMapLoader::Preload_AllMapData`](https://github.com/ddoichaboom/DX9_2.5D_GameProject/blob/9a49e1837a079ea5d0458322138afe79708e023a/Client/Code/CMapLoader.cpp#L85-L192)</sub>
+<sub>코드 · [`CMapLoader::Preload_AllMapData`](https://github.com/ddoichaboom/DX9_2.5D_GameProject_Team/blob/9a49e1837a079ea5d0458322138afe79708e023a/Client/Code/CMapLoader.cpp#L85-L192)</sub>
 
 </details>
 
@@ -207,7 +207,7 @@ pFloor->Set_FloorType(objData.iFloorType);
 pFloor->Get_Component(ID_STATIC, L"Com_Transform")->Update_Component(0.f);   // 월드 행렬 1회
 ```
 
-<sub>코드 · [`CStage::Change_Room`](https://github.com/ddoichaboom/DX9_2.5D_GameProject/blob/9a49e1837a079ea5d0458322138afe79708e023a/Client/Code/CStage.cpp#L39-L123) · [`CMapLoader::Get_GameObject_FromPool`](https://github.com/ddoichaboom/DX9_2.5D_GameProject/blob/9a49e1837a079ea5d0458322138afe79708e023a/Client/Code/CMapLoader.cpp#L783-L1043)</sub>
+<sub>코드 · [`CStage::Change_Room`](https://github.com/ddoichaboom/DX9_2.5D_GameProject_Team/blob/9a49e1837a079ea5d0458322138afe79708e023a/Client/Code/CStage.cpp#L39-L123) · [`CMapLoader::Get_GameObject_FromPool`](https://github.com/ddoichaboom/DX9_2.5D_GameProject_Team/blob/9a49e1837a079ea5d0458322138afe79708e023a/Client/Code/CMapLoader.cpp#L783-L1043)</sub>
 
 </details>
 
@@ -284,7 +284,7 @@ for (auto iter = roomMap.begin(); iter != roomMap.end(); ++iter)   // 시작 방
 }
 ```
 
-<sub>코드 · [`CMapLoader::Get_MaxObjectCount`](https://github.com/ddoichaboom/DX9_2.5D_GameProject/blob/9a49e1837a079ea5d0458322138afe79708e023a/Client/Code/CMapLoader.cpp#L562-L635)</sub>
+<sub>코드 · [`CMapLoader::Get_MaxObjectCount`](https://github.com/ddoichaboom/DX9_2.5D_GameProject_Team/blob/9a49e1837a079ea5d0458322138afe79708e023a/Client/Code/CMapLoader.cpp#L562-L635)</sub>
 
 </details>
 
@@ -363,7 +363,7 @@ _float t = (fPlaneY - vRayPos.y) / vRayDir.y;
 _vec3 vIntersection = vRayPos + vRayDir * t;
 ```
 
-<sub>코드 · [`CMousePicker::Screen_To_WorldRay`](https://github.com/ddoichaboom/DX9_2.5D_GameProject/blob/9a49e1837a079ea5d0458322138afe79708e023a/Editor/Code/CMousePicker.cpp#L19-L43) · [`CEditorScene::Pick_OnPlane`](https://github.com/ddoichaboom/DX9_2.5D_GameProject/blob/9a49e1837a079ea5d0458322138afe79708e023a/Editor/Code/CEditorScene.cpp#L690-L716)</sub>
+<sub>코드 · [`CMousePicker::Screen_To_WorldRay`](https://github.com/ddoichaboom/DX9_2.5D_GameProject_Team/blob/9a49e1837a079ea5d0458322138afe79708e023a/Editor/Code/CMousePicker.cpp#L19-L43) · [`CEditorScene::Pick_OnPlane`](https://github.com/ddoichaboom/DX9_2.5D_GameProject_Team/blob/9a49e1837a079ea5d0458322138afe79708e023a/Editor/Code/CEditorScene.cpp#L690-L716)</sub>
 
 </details>
 
@@ -421,7 +421,7 @@ pickedList.sort([](const PickedInfo& a, const PickedInfo& b)
     });
 ```
 
-<sub>코드 · [`CSelectionMgr::Pick_Object`](https://github.com/ddoichaboom/DX9_2.5D_GameProject/blob/9a49e1837a079ea5d0458322138afe79708e023a/Editor/Code/CSelectionMgr.cpp#L101-L163)</sub>
+<sub>코드 · [`CSelectionMgr::Pick_Object`](https://github.com/ddoichaboom/DX9_2.5D_GameProject_Team/blob/9a49e1837a079ea5d0458322138afe79708e023a/Editor/Code/CSelectionMgr.cpp#L101-L163)</sub>
 
 </details>
 
@@ -466,7 +466,7 @@ for (auto& pNewObj : newObjects)
     Add_SelectedObject(pNewObj);                                        // 복제본이 새 선택
 ```
 
-<sub>코드 · [`CEditorScene::Handle_Duplicate`](https://github.com/ddoichaboom/DX9_2.5D_GameProject/blob/9a49e1837a079ea5d0458322138afe79708e023a/Editor/Code/CEditorScene.cpp#L256-L486)</sub>
+<sub>코드 · [`CEditorScene::Handle_Duplicate`](https://github.com/ddoichaboom/DX9_2.5D_GameProject_Team/blob/9a49e1837a079ea5d0458322138afe79708e023a/Editor/Code/CEditorScene.cpp#L256-L486)</sub>
 
 </details>
 
@@ -565,7 +565,7 @@ _vec3 vCurrentRot = m_vInitialRot;
 vCurrentRot.y += m_fCurrentAngle;
 ```
 
-<sub>코드 · [`CRcTexSide::Ready_Buffer`](https://github.com/ddoichaboom/DX9_2.5D_GameProject/blob/9a49e1837a079ea5d0458322138afe79708e023a/Engine/Code/CRcTexSide.cpp#L22-L74) · [`CDoorLeft::Update_Animation`](https://github.com/ddoichaboom/DX9_2.5D_GameProject/blob/9a49e1837a079ea5d0458322138afe79708e023a/Client/Code/CDoorLeft.cpp#L240-L270)</sub>
+<sub>코드 · [`CRcTexSide::Ready_Buffer`](https://github.com/ddoichaboom/DX9_2.5D_GameProject_Team/blob/9a49e1837a079ea5d0458322138afe79708e023a/Engine/Code/CRcTexSide.cpp#L22-L74) · [`CDoorLeft::Update_Animation`](https://github.com/ddoichaboom/DX9_2.5D_GameProject_Team/blob/9a49e1837a079ea5d0458322138afe79708e023a/Client/Code/CDoorLeft.cpp#L240-L270)</sub>
 
 </details>
 
@@ -616,7 +616,7 @@ _float fHorizontalDist = fLength * cosf(fRadian);
 _float fVerticalDist = fLength * sinf(fRadian);
 ```
 
-<sub>코드 · [`CEditorSlopeFloor::Calculate_Rotation`](https://github.com/ddoichaboom/DX9_2.5D_GameProject/blob/9a49e1837a079ea5d0458322138afe79708e023a/Editor/Code/CEditorSlopeFloor.cpp#L143-L191) · [`CEditorSlopeFloor::Get_OppositeEndPosition`](https://github.com/ddoichaboom/DX9_2.5D_GameProject/blob/9a49e1837a079ea5d0458322138afe79708e023a/Editor/Code/CEditorSlopeFloor.cpp#L309-L399)</sub>
+<sub>코드 · [`CEditorSlopeFloor::Calculate_Rotation`](https://github.com/ddoichaboom/DX9_2.5D_GameProject_Team/blob/9a49e1837a079ea5d0458322138afe79708e023a/Editor/Code/CEditorSlopeFloor.cpp#L143-L191) · [`CEditorSlopeFloor::Get_OppositeEndPosition`](https://github.com/ddoichaboom/DX9_2.5D_GameProject_Team/blob/9a49e1837a079ea5d0458322138afe79708e023a/Editor/Code/CEditorSlopeFloor.cpp#L309-L399)</sub>
 
 </details>
 
